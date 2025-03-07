@@ -4,14 +4,14 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-// @ControllerAdvice // 集中處裡所有Conteoller
+@ControllerAdvice // 集中處裡所有Conteoller
 public class GlobalExceptionHandler {
 
-    // @ResponseBody
-    // @ExceptionHandler(Exception.class)
-    // public String handlerExceptionHandler(Exception e) {
+    @ResponseBody
+    @ExceptionHandler(Exception.class)
+    public String handlerExceptionHandler(Exception e) {
 
-    // return "hello" + e.getMessage();
-    // }
+        return "錯誤了!大小姐~  " + e;
+    }
 
 }

@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Hello {
 
-    @GetMapping("/hello2")
+    @GetMapping("/hello333")
     public String hello2() {
-        var i = 200 / 2;
+        int i = 200 / 2;
 
-        return i+"";
+        return i + "";
     }
 }
